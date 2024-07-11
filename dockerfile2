@@ -1,0 +1,7 @@
+FROM    nginx:latest
+LABEL   maintainer="fandiabdillah@gmail.com"
+RUN     apt-get update
+WORKDIR /responsi/webprofil
+COPY    website-profil /responsi/webprofil/
+EXPOSE  80
+CMD     ["bash"]
